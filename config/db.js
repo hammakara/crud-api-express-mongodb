@@ -1,7 +1,9 @@
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
-  await mongoose.connect('mongodb://127.0.0.1:27017/itp-3');
+  await mongoose.connect(
+    'mongodb+srv://hammakara51_db_user:fwueR8UENAWkHbuc@cluster0.yfcuwut.mongodb.net/itp-3'
+  );
   console.log('Database connected!');
 };
 export default connectDB;
